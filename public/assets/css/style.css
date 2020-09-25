@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: papayawhip;
+    --black-color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    height: 85px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 25px;
+}
+
+[Explain] img{
+    margin: auto;
+    display: block;
+}
+[Explain] h2{
+    text-align: center;
+    margin: 0 auto 20px;
+}
+.button-wrapper {
+    text-align: center;
+}
+[Explain] p{
+    margin:2% 8%;
+    text-align: justify;
+    line-height: 2;
+}
+.button-wrapper a {
+    padding: 15px 35px;
+    border: 1px solid var(--black-color);
+    display: inline-block;
+    margin: 5%;
+}
+
+.button-wrapper a:hover {
+    background-color: var(--main-color);
+    color: var(--black-color);
+}
