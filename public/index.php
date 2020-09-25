@@ -18,7 +18,7 @@
            <li><a href="index.php">Home</a></li>
            <li><a href="#">Sondages</a></li>
            <li><a href="#">Contact</a></li>
-           <li><a href="#">Classement</a></li>
+           <li><a href="views/ranking.php">Classement</a></li>
         </ul>    
         </nav>
     </header>

@@ -8,6 +8,11 @@
     --main-color: papayawhip;
     --black-color: black;
     font-family: 'Montserrat', sans-serif;
+    --h2-size: 2rem;
+}
+html{
+    
+    font-size: 16px;
 }
 
 header {
@@ -33,9 +38,10 @@ nav ul li {
     margin: auto;
     display: block;
 }
-[Explain] h2{
+[Explain], [Rank] h2{
     text-align: center;
     margin: 0 auto 20px;
+    font-size: var(--h2-size);
 }
 .button-wrapper {
     text-align: center;
@@ -55,4 +61,55 @@ nav ul li {
 .button-wrapper a:hover {
     background-color: var(--main-color);
     color: var(--black-color);
+}
+[Rank] select#number{
+    padding: .9rem;
+    display: block;
+    margin: auto;
+    padding: 20px 18px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1024px)  {
+  
+[Explain]{
+
+    display: flex;
+}
+[Explain] img{
+flex: 1;
+}
+[Explain] .wirl{
+    flex: 1;
+    margin-top: 10%;
+}
 }
