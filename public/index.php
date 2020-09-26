@@ -33,5 +33,85 @@
             </div>
         </div>
     </section>
+    <section Discover>
+      <div class="titleDiscover">
+        <h2> Nos solutions BullShit 
+            <span>Qu'en pensez-vous ?</span>
+        </h2>
+      </div>
+      <div class="solutionsContainer">
+          <div class="singleSolution">
+              <h3>BullShit Solution</h3>
+              <img src="assets/img/bullshit.jpg" alt="BullShit">
+              <p>
+                Transformez le feedback en actions concrètes pour améliorer l'expérience client
+              </p>
+              <a href="#">Découvrir BullShit</a>
+          </div>
+          <div class="singleSolution">
+              <h3>BullShit Solution</h3>
+              <img src="assets/img/bullshit.jpg" alt="BullShit">
+              <p>
+                Transformez le feedback en actions concrètes pour améliorer l'expérience client
+              </p>
+              <a href="#">Découvrir BullShit</a>
+          </div>
+          <div class="singleSolution">
+              <h3>BullShit Solution</h3>
+              <img src="assets/img/bullshit.jpg" alt="BullShit">
+              <p>
+                Transformez le feedback en actions concrètes pour améliorer l'expérience client
+              </p>
+              <a href="#">Découvrir BullShit</a>
+          </div>
+      </div>
+    </section>
+    <section Number>
+        <div class="quote">
+            <h2>
+                "Trouvez les bons interlocuteurs"
+            </h2>
+            <p>
+                Obtenez du feedback dans le monde entier, à tout moment. Les <a href="#surveys">études de marché</a> vous permettent de connaître l’avis de clients potentiels et existants, de tester des concepts, d’évaluer la notoriété de votre marque, et bien plus encore.
+            </p>
+            <img src="assets/img/exemple-etude-de-marche.jpg" alt="" id="surveys">
+        </div>
+        <div class="numbersContainer">
+            <div class="aNumber">
+                <h3>1800%</h3>
+                <p>De <span> productivité </span>en + que nos concurrents. Nous avons calculés ce chiffre grâce à nos experts du marketing que vous pouvez retrouver <a href="#team">ici</a>. </p>
+            </div>
+            <div class="aNumber">
+                <h3>65%</h3>
+                <p>des <span>milléniaux</span> interrogés placent les valeurs de l'entreprise au-dessus du salaire proposé au moment de choisir un employeur. </p>
+            </div>
+            <div class="aNumber">
+                <h3>TEST A/B</h3>
+                <p>Gagnez du temps et de l’argent grâce aux <span>tests de concept</span>. Obtenez du feedback en temps réel sur vos idées de nouveaux produits, campagnes marketing et plus encore.</a>. </p>
+            </div>
+        </div>
+    </section>
+    <section Team>
+        <h2>La Team</h2>
+        <div class="teamContainer">
+            <div class="teamCard">
+                <img src="assets/img/doug.jpg" alt="Doug">
+                <span class="name">Doug</span>
+            </div>
+            <div class="teamCard">
+                <img src="assets/img/doug1.jpg" alt="Doug">
+                <span class="name">Doug</span>
+            </div>
+            <div class="teamCard">
+                <img src="assets/img/doug2.jpg" alt="Doug">
+                <span class="name">Doug</span>
+            </div>
+            <div class="teamCard">
+                <img src="assets/img/doug3.jpg" alt="Doug">
+                <span class="name">Doug</span>
+            </div>
+      
+        </div>
+    </section>
 </body>
 </html>
