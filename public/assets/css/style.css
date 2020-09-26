@@ -25,10 +25,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 nav {
-    height: 85px;
+    height: 5.325rem;
+
 }
 
 nav ul {
@@ -38,7 +40,8 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    margin: 25px;
+    margin: 1.525rem;
+
 }
 
 nav ul li:first-child {
@@ -52,12 +55,13 @@ nav ul li:first-child {
 
 h2 {
     text-align: center;
-    margin: 0 auto 20px;
+    margin: 0 auto 1.25rem;
     font-size: var(--h2-size);
 }
 
 .button-wrapper {
     text-align: center;
+
 }
 
 [Explain] p {
@@ -68,11 +72,13 @@ h2 {
 }
 
 .button-wrapper a {
-    padding: 15px 35px;
-    border: 1px solid var(--dark-color);
+    padding: 1.25rem 3rem;
+    border: .1rem solid var(--main-color);
     display: inline-block;
     margin: 5%;
     font-size: var(--btn-font-size);
+    border-radius:12% !important;
+
 }
 
 .button-wrapper a:hover {
@@ -91,7 +97,7 @@ h2 {
 }
 
 [Discover] .singleSolution {
-    border: var(--main-color) 1px solid;
+    border: var(--main-color) .1rem solid;
     text-align: center;
     padding: 1rem;
     margin: 1rem;
@@ -163,7 +169,7 @@ h2 {
     flex-wrap: wrap;
     height: 100%;
     margin: auto;
-    width: 90%;
+    width: 80%;
 }
 
 [Team] .teamCard {
@@ -182,13 +188,66 @@ h2 {
     color: var(--clear-color);
     padding: 1rem;
 }
+[Trust] p{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+[Trust] .trustContainer{
+display: flex;
+flex-wrap: wrap;
 
+}
+
+[Trust] .user{
+display: flex;
+flex-direction: column;
+flex: 0 1 calc(20% - 8px);
+padding: 1rem 0;
+}
+[Trust] span{
+display: inline;
+margin: 1rem auto;
+
+}
+[Trust] img{
+width: 50%;
+margin: auto;
+}
 ‘ [Rank] select#number {
     padding: .9rem;
     display: block;
     margin: auto;
-    padding: 20px 18px;
+    padding: 1.25 1.125rem;
 }
+
+
+footer{
+    background-color: var(--main-color);
+    display: flex;
+    height: 30vh;
+}
+.social{
+    margin: 1.25rem;
+}
+
+footer > .credits{
+    display: none;
+}
+
+/*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+/*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+/*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+/*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+/*  *//* *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+/*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+/*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+/*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+/*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+/*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+/*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+/*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+/*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
 
 @media only screen and (min-width: 1024px) {
     [Explain] {
@@ -199,7 +258,7 @@ h2 {
     }
     [Explain] .wirl {
         flex: 1;
-        margin-top: 10%;
+        margin-top: 5%;
     }
     [Discover] {
         height: 100vh;
@@ -244,8 +303,11 @@ h2 {
     .quote h2 {
         background-color: var(--dark-color)
     }
-    [team] .teamContainer{
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
+    
+[Team] .teamContainer{
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+
 }
