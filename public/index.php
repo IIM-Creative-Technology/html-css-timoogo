@@ -21,7 +21,7 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="#">Sondages</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="views/ranking.php">Classement</a></li>
+                <li><a href="../views/ranking.php">Classement</a></li>
             </ul>
         </nav>
     </header>
@@ -235,35 +235,8 @@
         </div>
     </section>
 
-    <footer>
-        <div class="social">
-            <hr>
-            <a href="#" class="social_link">
-                    <span><i class="fab fa-github"></i></span>
-                </div>
-                <div class="subTitleSocial">timoogo</div>
-            </a>
-        </div>
-        <div class="social">
-            <hr>
-            <a href="#" class="social_link">
-                    <span><i class="fab fa-github"></i></span>
-                </div>
-                <div class="subTitleSocial">timoogo</div>
-            </a>
-        </div>
-        <div class="social">
-            <hr>
-            <a href="#" class="social_link">
-                    <span><i class="fab fa-github"></i></span>
-                </div>
-                <div class="subTitleSocial">timoogo</div>
-            </a>
-        </div>
-        <div class="credits">
-            <p>Copyrights ©︎ 2020 timogo.</p>
-        </div>
-    </footer>
+
+    
 </body>
 
 </html>
