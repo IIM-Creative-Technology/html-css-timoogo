@@ -19,7 +19,7 @@
         <nav>
             <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="#">Sondages</a></li>
+                <li><a href="../views/list.php">Sondages</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="../views/ranking.php">Classement</a></li>
             </ul>
