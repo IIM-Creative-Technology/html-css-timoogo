@@ -6,7 +6,7 @@
 
 :root {
     --main-color: #c58484;
-    --dark-color: #333e48;
+    --dark-color: #6F2D2E;
     --clear-color: #F1F1F1;
     font-family: 'Montserrat', sans-serif;
     font-size: 700;
@@ -41,10 +41,23 @@ nav ul li {
     margin: 1.525rem;
 }
 
-nav ul li:first-child {
+nav ul li a {
+    color: var(--main-color);
+    padding: 3rem 1.5rem;
+}
+
+nav ul li a:hover {
+    background-color: var(--dark-color);
+    color: var(--clear-color);
+}
+
+nav ul li:first-child, nav ul li :nth-child(3) {
     display: none;
 }
 
+a{  
+    color: var(--dark-color);
+}
 [Explain] img {
     margin: auto;
     display: block;
@@ -77,8 +90,12 @@ h2 {
 }
 
 .button-wrapper a:hover {
-    background-color: var(--main-color);
+    background-color: var(--dark-color);
     color: #F1F1F1;
+}
+
+[TheSurvey] .button-wrapper a {
+    margin: 2%;
 }
 
 [Discover] {
@@ -94,18 +111,57 @@ h2 {
 [Discover] .singleSolution {
     border: var(--main-color) .1rem solid;
     text-align: center;
-    padding: 1rem;
-    margin: 1rem;
+    padding: 1.5rem .6rem;
+    margin: 1.3rem;
     height: 100%;
-    border-radius: 8%;
+    border-radius: 14%;
+    background-color: var(--main-color);
+    transition: 1s;
 }
 
-[Discover] .singleSolution h3 {
+[Discover] .singleSolution a {
+    color: var(--dark-color);
+}
+
+[Discover] .singleSolution:hover {
+    animation-name: grow;
+    animation-duration: .7s;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scaleY(1.09);
+    }
+}
+
+[Discover] .singleSolution:not(:hover) {
+    transform: scale(.8);
+}
+
+[Discover] .singleSolution:hover, .singleSolution:hover a {
+    background-color: var(--dark-color);
+    color: var(--clear-color);
+}
+
+[Discover] .singleSolution:hover h3 {
     margin: 2rem;
+    color: var(--main-color);
 }
 
 [Discover] .singleSolution p {
     margin: 3% auto;
+    color: var(--clear-color);
+}
+
+[Discover] .singleSolution h3 {
+    color: var(--main-color);
+}
+
+[Discover] img {
+    border-radius: 12%;
 }
 
 [Number] .numbersContainer {
@@ -175,6 +231,9 @@ h2 {
 [Team] .teamCard img {
     margin: auto;
     display: block;
+    width: 60%;
+    border-radius: 8%;
+    transition: 1s;
 }
 
 [Team] span {
@@ -206,6 +265,12 @@ h2 {
     padding: 1rem 0;
 }
 
+[Trust] .user:hover {
+    background-color: var(--dark-color);
+    color: var(--clear-color);
+    transition: .4s;
+}
+
 [Trust] span {
     display: inline;
     margin: 1rem auto;
@@ -235,12 +300,12 @@ h2 {
     padding: 2rem;
 }
 
-[Rank] th:nth-child(3) { 
+[Rank] th:nth-of-type(odd) {
     font-size: var(--important-span-size);
 }
-[Rank] th:nth-child(4) {
-    width: 25%;
-    display: none;
+
+[Rank] th:nth-child(4){
+    display: none ;
 }
 
 [SurveyList] .listContainer {
@@ -249,34 +314,38 @@ h2 {
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: column;
-
 }
 
-[SurveyList] article{ 
-    text-align: center;    
+[SurveyList] article {
+    text-align: center;
     margin: 5rem 1rem;
     text-size-adjust: auto;
 }
-[SurveyList] article h1{ 
+
+[SurveyList] article h1 {
     padding: 1rem;
 }
-[SurveyList] article:not(:first-child){
-    margin:10px 0;
-} 
-[SurveyList] article img{
+
+[SurveyList] article:not(:first-child) {
+    margin: 10px 0;
+}
+
+[SurveyList] article img {
     max-width: 40rem;
 }
-[SurveyList] article p{
+
+[SurveyList] article p {
     text-align: justify;
     max-width: 40rem;
-
     padding: 2rem 0;
     line-height: 1.8rem;
 }
+
 footer {
     background-color: var(--main-color);
+    flex-direction: column;
     display: flex;
-    height: 30vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -286,69 +355,151 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
+}
+.socialCard:nth-child(2){
+    display: none;
 }
 
-/* footer > .credits{
-    /* display: none;
-} */
+[TheSurvey] {
+    height: 100vh;
+}
 
-                                /* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//*  *//*MEDIA QUERIE DESKTOP*//*  *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
-                                /* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
+[TheSurvey] .title {
+    width: 100%;
+    height: 10rem;
+    background-color: var(--dark-color);
+    color: var(--clear-color);
+}
 
+[TheSurvey] h2 {
+    text-align: left;
+    padding: 2rem 1rem;
+}
+
+[TheSurvey] progress {
+    background-color: red;
+    width: 100%;
+}
+
+[TheSurvey] progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 2rem;
+}
+
+[TheSurvey] input {
+    /*Temporaire, en attendant que je fasse la page contact.php*/
+    margin: 4rem;
+}
+
+[TheSurvey] h3 {
+    font-size: var(--h3-size);
+    padding: 1rem;
+}
+.socialLinks {
+    padding: .5rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex:1 1 0;
+    align-items: center;
+    width: 100%;
+   
+}
+
+
+.socialCard {
+width: 6rem;
+height: 5rem;
+    background-color: var(--clear-color);
+    border-radius:14% ;
+}
+.socialCard a i{
+    display: grid; /*temporaire*/
+}
+.socialCard a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    text-decoration: none;
+    flex-direction: column;
+}
+.socialCard:hover {
+    color: var(--dark-color);
+}
+
+.credits {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex: 1 1;
+    flex-direction: column;
+    margin: auto;
+}
+.credits .sign{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 3%;
+
+}
+.credits h4{
+    text-align: center; 
+    margin: 2rem auto;
+    width: 75%;
+}
+.sign a{
+    color: var(--clear-color);
+    padding: 3%;
+}
+.sign a:hover {
+    background-color: var(--dark-color);
+    color: var(--main-color);
+}
+
+i.fas, i.fab {
+    color: var(--main-color);
+    display: block;
+    text-align: center;
+    font-size: var(--p-size);
+padding: 1rem;
+}
+i.fab{
+        width: 6rem;
+        height: 5rem;
+
+}
+i:hover{
+    background-color: var(--dark-color) ;
+    border-radius: 14%;
+}
+/* 
+
+MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES 
+MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES 
+MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES 
+MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES 
+MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES 
+MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES 
+MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES 
+MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES 
+MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES 
+MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES 
+MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES 
+
+
+
+
+ */
 
 @media only screen and (min-width: 1024px) {
-    nav ul li:first-child {
-        display: initial;
+    nav ul li:first-child, nav ul li:nth-child(3) {
+        display: block;
     }
     [Explain] {
         display: flex;
-        
     }
     [Explain] img {
         flex: 1;
@@ -367,6 +518,7 @@ footer {
     }
     .solutionsContainer .singleSolution {
         width: 80%;
+        height: 70vh;
     }
     .singleSolution {
         justify-content: space-evenly;
@@ -391,13 +543,6 @@ footer {
     .numbersContainer a {
         color: #F1F1F1;
     }
-    p span {
-        text-decoration: underline;
-        text-decoration-color: blanchedalmond;
-    }
-    p span:hover {
-        text-transform: uppercase;
-    }
     .quote h2 {
         background-color: var(--main-color)
     }
@@ -406,15 +551,31 @@ footer {
         flex-wrap: nowrap;
     }
     [Rank] th:nth-child(4) {
-    width: 25%;
-    display: revert;
-}
-[SurveyList] .listContainer {
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-[SurveyList] article img{
-    height: 20rem;
-    width: 20remx;
-}
+        width: 25%;
+        display: revert;
+    }
+    [SurveyList] .listContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    [SurveyList] article img {
+        height: 20rem;
+        width: 20remx;
+    }
+
+    footer{
+   
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    
+
+    .socialCard:nth-child(3){
+        display: none;
+    }
+    .socialCard:nth-child(2){
+        display: block;
+    }
+   
 }

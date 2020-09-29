@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redline - un nième site de sondage </title>
     <link rel="stylesheet" href="../public/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
         </h1>
         <nav>
             <ul>
-                <li><a href="../public/index.php">Home</a></li>
+                <li> <a href="../public/index.php">Home</a></li>
                 <li><a href="../views/list.php">Sondages</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="../views/ranking.php">Classement</a></li>
@@ -84,7 +85,7 @@
                     <th><img src="../public/assets/img/rank/Jimmy_Valner.png" alt=""></th>
                 </tr>
                 <tr>
-                    <th>12</th>
+                    <th>9</th>
                     <th>15 - Juste 15</th>
                     <th>9</th>
                     <th><img src="../public/assets/img/rank/15.png" alt=""></th>
@@ -98,3 +99,39 @@
             </table>
         </div>
     </section>
+    <footer>
+   <div class="socialLinks">
+   <div class="socialCard">
+        <a href="https://github.com/timoogo">
+            <i class="fab fa-github">
+                <span>github</span>
+            </i>
+        </a>
+        </div>
+        <div class="socialCard">
+            <a href="mailto:timothee.gaultier@edu.devinci.fr"> 
+            <i class="fas fa-envelope"><span>Envoyez moi un email !</span></i>
+            </a>
+        </div>
+        <div class="socialCard">
+            <a href="tel:+33658842360"> 
+            <i class="fas fa-phone">
+                <span>Appelez moi ! </span>
+            </i>
+            </a>
+        </div>
+   
+   </div>
+    <div class="credits">
+       <h4> Site crée par Timothee Gaultier (timogo©). Assets modifiés par Timothée Gaultier 2A - DW IIM.   </h4>
+        <!-- Vu qu'il n'y a pas encore de système d'insctiption / connexion, je les mets dans le footer, après ils seront dans un menu déroulant dans header nav ul -->
+        <div class="sign">
+            <a href="#">Connexion</a>
+            <a href="#">Inscription</a>
+        </div>
+   </div> 
+
+</footer>
+</body>
+
+</html>
