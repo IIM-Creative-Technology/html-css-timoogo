@@ -26,9 +26,9 @@
         </nav>
     </header>
     <section Rank>
-        <h2>Top 10 des résultats</h2>
-
+        
         <div class="rank_container">
+            <h2>Top 10 des résultats</h2>
             <table>
                 <tr>
                     <th>Position</th>

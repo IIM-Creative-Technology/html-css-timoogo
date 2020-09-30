@@ -287,7 +287,7 @@ h2 {
 
 [Rank] table {
     width: 80%;
-    margin: auto;
+    margin: 3rem auto ;
     padding: 0;
 }
 
@@ -596,5 +596,10 @@ MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES
         height: 20rem;
         width: 90%;
     }
+    [Rank] th {
+
+    padding:1rem;
+
+}
 
 }
