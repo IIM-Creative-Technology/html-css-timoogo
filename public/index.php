@@ -85,7 +85,7 @@
                 vous permettent de connaître l’avis de clients potentiels et existants, de tester des concepts,
                 d’évaluer la notoriété de votre marque, et bien plus encore.
             </p>
-            <img src="assets/img/exemple-etude-de-marche.jpg" alt="" id="surveys">
+            <img src="assets/img/etude.jpg" alt="ordinateur posé sur une table rouge. sur l'écran se trouve un sondage" id="surveys">
         </div>
         <div class="numbersContainer">
             <div class="aNumber">

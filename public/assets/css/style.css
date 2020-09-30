@@ -38,7 +38,11 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    margin: 1.525rem;
+    margin: 1.525rem .8rem;
+}
+nav ul li:first-child{
+    margin-left:0;
+    padding-left: 0;
 }
 
 nav ul li a {
@@ -543,6 +547,7 @@ MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES
     .numbersContainer a {
         color: #F1F1F1;
     }
+    
     .quote h2 {
         background-color: var(--main-color)
     }
@@ -578,4 +583,18 @@ MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES
         display: block;
     }
    
+}
+@media only screen and (max-width : 500px){
+    nav ul li:nth-child(3){
+        display: none;
+    } 
+    [Discover] img {
+        border-radius: 12%;
+        width: 100%;
+    }
+    [SurveyList] article img {
+        height: 20rem;
+        width: 90%;
+    }
+
 }
