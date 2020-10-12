@@ -1,0 +1,21 @@
+@import "style.css";
+
+#score{
+    /*! display: none; */
+    padding: .9rem;
+    margin: .5rem;
+    background-color:#56E39F ;
+    border-radius: 4rem;
+    max-width: 60%;
+    min-width: 5rem;
+    text-align: center;
+    color: var(--clear-color);
+    font-size: 1.3rem;
+}
+#score:hover{
+    background-color: #2A1F2D;
+   
+}
+#score:hover::before{
+    content:'Score : ';
+}
