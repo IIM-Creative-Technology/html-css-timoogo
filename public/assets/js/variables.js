@@ -14,7 +14,7 @@ class Player {
         this.score = score;
     }
 }
-const player = new Player("", 0)
+const player = new Player("", 0);
 const Poll = [
     new Question ("Les céreales, avant ou après le lait ?", 0),
     new Question ("Dark souls c'est la vie?", 1),
@@ -25,6 +25,7 @@ const answers = [
     ["non", "oui"],
     ["avant", "après", "ct nul ptdr t ki"],
 ];
+
 let indexQuestion = 0; // sert a incrémenter les questions
 let scoreWrapper  = document.getElementById("score"); //score 
 let usernameDisplay =document.getElementById("usernameDisplay");
@@ -37,3 +38,14 @@ let answerBtn, answerBtnParent
 let btnToRemove; 
 //Variables qui vont être utilisées pour la suppression de la question
 let questionToRemove, questionToRemoveParent;
+
+
+//variables pour écran de fin
+
+const finalText = ['Tu as eu zero bonnes réponses...', 
+                   'tu as eu 1 bonne réponse', 
+                   'tu as eu 2 bonnes réponses', 
+                   'tu as eu 3 bonnes réponses'];
+
+let finalScoreDisplay = document.createElement("div");
+let finalScoreParent = document.getElementsByClassName("container")[0];
