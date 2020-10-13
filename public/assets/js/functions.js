@@ -4,8 +4,6 @@ function CreateUsername() {
   while (player.username == " " || player.username == "" || player.username == null)
     player.username = prompt("Encore, Quel est ton nom ?");
 
-
-
   if (player.username != null) {
     console.log("init");
     Init();
@@ -14,6 +12,7 @@ function CreateUsername() {
   }
 
 }
+
 function Init() {
   confirm("Bienvenue " + player.username + " le sondage va commencer");
   usernameDisplay.innerHTML += player.username;
@@ -56,42 +55,39 @@ function AnwserManager() {
 }
 function EndGame() {
   let finalTextDisplay = document.createElement("div");
-  finalTextDisplay.setAttribute("id", 'finalText' );
+  finalTextDisplay.setAttribute("id", 'finalText');
 
   finalScoreDisplay.setAttribute('id', 'finalScoreDisplay');
   finalScoreDisplay.setAttribute('class', 'score');
-  
+
   finalTextDisplay.style.display = 'block';
   finalScoreDisplay.style.display = "block";
 
-  
 
-  switch (player.score) {
+  switch(player.score){
     case 0:
-      finalTextDisplay.innerHTML = finalText[0];
+        finalTextDisplay.innerHTML+= finalText[0];
+        break;
     case 33:
-     finalTextDisplay.innerHTML = finalText[1];
+        finalTextDisplay.innerHTML+= finalText[1];
+        break;
     case 66:
-     finalTextDisplay.innerHTML = finalText[2];
+        finalTextDisplay.innerHTML+= finalText[2];
+        break;
     case 100:
-     finalTextDisplay.innerHTML = finalText[3];
-      break;
-  
-    default:
-      break;
-  }
-
-
+        finalTextDisplay.innerHTML+= finalText[3];
+        break;
+      }
   finalScoreParent.appendChild(finalTextDisplay);
   finalScoreParent.appendChild(finalScoreDisplay);
-  finalScoreParent.appendChild(finalScoreDisplay);
   finalScoreDisplay.innerHTML = player.score;
+  finalScoreParent.appendChild()
 }
 function Score() {
 
   player.score += (Math.floor(100 / Poll.length));
   scoreWrapper.textContent = player.score;
-  if (player.score > 66)
+  if (player.score > 80)
     if (player.score = 100)
       scoreWrapper.innerHTML = 100;
 }
@@ -108,12 +104,6 @@ function HappenOnClick() {
   }
 
   //si on a atteint la fin des questions
-
-
-
-
-
-
   AnwserManager(); //lance question suivante 
 
 }
