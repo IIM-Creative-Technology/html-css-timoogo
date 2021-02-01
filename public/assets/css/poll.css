@@ -1,0 +1,99 @@
+@import "style.css";
+#score, .score {
+    display: none;
+    padding: .9rem;
+    margin: .5rem;
+    background-color: #56E39F;
+    border-radius: 4rem;
+    max-width: 60%;
+    min-width: 5rem;
+    text-align: center;
+    color: var(--clear-color);
+    font-size: 1.3rem;
+}
+
+#score:hover {
+    background-color: #2A1F2D;
+    transition: 1s;
+    transform: scale(1.4);
+}
+
+#score:hover::before {
+    content: 'Score : ';
+}
+
+#finalScoreDisplay {
+    margin: auto;
+    width: 20%;
+    display: none;
+}
+#finalScoreDisplay::before{
+    content: "Score final de...";
+}
+#finalScoreDisplay:hover{
+    background-color: #2A1F2D !important;
+}
+#finalText {
+    text-align: center;
+    padding: 30px;
+    margin: 50px auto;
+    color: #56E39F;
+}
+#usernameDisplay {
+    display: none;
+    padding: .9rem;
+    margin: .5rem;
+    background-color: #2A1F2D;
+    border-radius: 4rem;
+    max-width: 60%;
+    min-width: 5rem;
+    text-align: center;
+    color: var(--clear-color);
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+#usernameDisplay:hover {
+    background-color: #56E39F;
+    transition: 1s ease-in-out;
+    transform: scale(1.4);
+}
+
+#usernameDisplay:hover::before {
+    content: "Profil de ";
+}
+
+#questionText {
+    text-align: center;
+    height: 12rem;
+}
+
+#isActive {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.answersContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button.answer {
+    padding: .3rem;
+    width: 9rem;
+    height: 3rem;
+    background-color: #56E39F;
+    border-radius: 14%;
+    border: none;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+button.answer:hover {
+    background-color: #2A1F2D;
+    transition: 1s;
+    transform: scale(1.8);
+    cursor: pointer;
+}
